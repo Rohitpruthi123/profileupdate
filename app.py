@@ -23,9 +23,7 @@ from gensim.utils import simple_preprocess
 from gensim.models import CoherenceModel
 
 
-# Plotting tools
-import pyLDAvis
-import pyLDAvis.gensim  # don't skip this
+
 import matplotlib.pyplot as plt
 
 # Enable logging for gensim - optional
@@ -45,9 +43,6 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.util import ngrams 
 
-
-from PIL import Image
-import streamlit as st
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 import streamlit as st
@@ -166,9 +161,6 @@ def build_topic_model(dataset, column_name,ntopics):
     pprint(lda_model.print_topics())
     doc_lda = lda_model[corpus]
      
-    import pyLDAvis.gensim
-    import pyLDAvis 
-    
     
        
     return lda_model
