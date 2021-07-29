@@ -22,8 +22,6 @@ import gensim.corpora as corpora
 from gensim.utils import simple_preprocess
 from gensim.models import CoherenceModel
 
-# spacy for lemmatization
-import spacy
 
 # Plotting tools
 import pyLDAvis
