@@ -157,7 +157,7 @@ def build_topic_model(dataset, column_name,ntopics):
     num_topics = ntopics
     # Build LDA model
     
-    lda_model = gensim.model.ldamodel.LdaModel(corpus=corpus,
+    lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                            id2word=id2word,
                                            num_topics=num_topics)
     # Print the Keyword in the 10 topics
