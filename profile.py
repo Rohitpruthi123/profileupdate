@@ -14,7 +14,7 @@ st.title("Rohit Pruthi")
 st.header(":email: rohitpruthi[at]gmail.com")
 
 st.sidebar.image('pic.jpg', width = 150)
-
+st.sidebar.header("Sections")
 section = st.sidebar.radio("Please select a section",('Education', 'Experience', 'Achievements', 'Opinions'))
 
 
